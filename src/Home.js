@@ -1,23 +1,116 @@
-import React from 'react';
+import React , { useState }from 'react';
 import { Link } from 'react-router-dom';
+
+
 import './Home.css';
 
 const Home = () => {
+    const [dropdown, setDropdown] = useState(null);
+
+  const handleMouseEnter = (menu) => {
+    setDropdown(menu);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdown(null);
+  };
+    
     return (
         <div id="a1">
             <div id="a2">
                 <h2 id="a3">Sevakdigitech.com</h2>
             </div>
             <div>
-                <div className="navbar">
-                    <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {/* <div className="navbar"> */}
+                    {/* <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/products">Products</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/solutions">Solutions</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/careers">Careers</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/blog">Blog</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/aboutUs">AboutUs</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link to="/training">Training</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/contactus">ContactUs</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <Link to="/contactus">ContactUs</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
+                    <div className="navbar">
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('home')} onMouseLeave={handleMouseLeave}>
+        <Link to="/">Home</Link>
+        {dropdown === 'home' && (
+          <div className="dropdown-menu">
+            {/* <Link to="/subpage1">Subpage 1</Link>
+            <Link to="/subpage2">Subpage 2</Link> */}
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('products')} onMouseLeave={handleMouseLeave}>
+        <Link to="/products">Products</Link>
+        {dropdown === 'products' && (
+          <div className="dropdown-menu">
+            <Link to="/products">SMS</Link>
+            <Link to="/products2">S2Services</Link>
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('solutions')} onMouseLeave={handleMouseLeave}>
+        <Link to="/solutions">Solutions</Link>
+        {dropdown === 'solutions' && (
+          <div className="dropdown-menu">
+            <Link to="/solutions">Our Solutions</Link>
+            
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('careers')} onMouseLeave={handleMouseLeave}>
+        <Link to="/careers">Careers</Link>
+        {dropdown === 'careers' && (
+          <div className="dropdown-menu">
+            <Link to="/careers">Career 1</Link>
+            <Link to="/career2">Career 2</Link>
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('blog')} onMouseLeave={handleMouseLeave}>
+        <Link to="/blog">Blog</Link>
+        {dropdown === 'blog' && (
+          <div className="dropdown-menu">
+            <Link to="/blog">Post 1</Link>
+            <Link to="/post2">Post 2</Link>
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('aboutUs')} onMouseLeave={handleMouseLeave}>
+        <Link to="/aboutUs">About Us</Link>
+        {dropdown === 'aboutUs' && (
+          <div className="dropdown-menu">
+            <Link to="/aboutus">Objective</Link>
+           
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('training')} onMouseLeave={handleMouseLeave}>
+        <Link to="/training">Training</Link>
+        {dropdown === 'training' && (
+          <div className="dropdown-menu">
+            <Link to="/training">Corporate Training</Link>
+            <Link to="/course2">Interships list</Link>
+          </div>
+        )}
+      </div>
+
+      <div className="menu-item" onMouseEnter={() => handleMouseEnter('contactus')} onMouseLeave={handleMouseLeave}>
+        <Link to="/contactus">Contact Us</Link>
+        {dropdown === 'contactus' && (
+          <div className="dropdown-menu">
+            <Link to="/contactus">Register Address</Link>
+            <Link to="/contactus1">Corporate Office</Link>
+          </div>
+        )}
+      </div>
+    {/* </div> */}
                     
                 </div>
             </div>
