@@ -2,6 +2,8 @@ import React , { useState }from 'react';
 import { Link } from 'react-router-dom';
 
 
+
+
 import './Home.css';
 
 const Home = () => {
@@ -16,27 +18,18 @@ const Home = () => {
   };
     
     return (
+      
         <div id="a1">
             <div id="a2">
-                <h2 id="a3">Sevakdigitech.com</h2>
+             
+      <h2 id="a3">Sevakdigitech.com</h2>
             </div>
             <div>
-                {/* <div className="navbar"> */}
-                    {/* <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/products">Products</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/solutions">Solutions</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/careers">Careers</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/blog">Blog</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/aboutUs">AboutUs</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/training">Training</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link to="/contactus">ContactUs</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                     <div className="navbar">
       <div className="menu-item" onMouseEnter={() => handleMouseEnter('home')} onMouseLeave={handleMouseLeave}>
         <Link to="/">Home</Link>
         {dropdown === 'home' && (
           <div className="dropdown-menu">
-            {/* <Link to="/subpage1">Subpage 1</Link>
-            <Link to="/subpage2">Subpage 2</Link> */}
           </div>
         )}
       </div>
@@ -61,7 +54,7 @@ const Home = () => {
         )}
       </div>
 
-      <div className="menu-item" onMouseEnter={() => handleMouseEnter('careers')} onMouseLeave={handleMouseLeave}>
+      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('careers')} onMouseLeave={handleMouseLeave}>
         <Link to="/careers">Careers</Link>
         {dropdown === 'careers' && (
           <div className="dropdown-menu">
@@ -69,9 +62,9 @@ const Home = () => {
             <Link to="/career2">Career 2</Link>
           </div>
         )}
-      </div>
+      </div> */}
 
-      <div className="menu-item" onMouseEnter={() => handleMouseEnter('blog')} onMouseLeave={handleMouseLeave}>
+      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('blog')} onMouseLeave={handleMouseLeave}>
         <Link to="/blog">Blog</Link>
         {dropdown === 'blog' && (
           <div className="dropdown-menu">
@@ -79,9 +72,9 @@ const Home = () => {
             <Link to="/post2">Post 2</Link>
           </div>
         )}
-      </div>
+      </div> */}
 
-      <div className="menu-item" onMouseEnter={() => handleMouseEnter('aboutUs')} onMouseLeave={handleMouseLeave}>
+      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('aboutUs')} onMouseLeave={handleMouseLeave}>
         <Link to="/aboutUs">About Us</Link>
         {dropdown === 'aboutUs' && (
           <div className="dropdown-menu">
@@ -89,9 +82,9 @@ const Home = () => {
            
           </div>
         )}
-      </div>
+      </div> */}
 
-      <div className="menu-item" onMouseEnter={() => handleMouseEnter('training')} onMouseLeave={handleMouseLeave}>
+      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('training')} onMouseLeave={handleMouseLeave}>
         <Link to="/training">Training</Link>
         {dropdown === 'training' && (
           <div className="dropdown-menu">
@@ -99,9 +92,9 @@ const Home = () => {
             <Link to="/course2">Interships list</Link>
           </div>
         )}
-      </div>
+      </div> */}
 
-      <div className="menu-item" onMouseEnter={() => handleMouseEnter('contactus')} onMouseLeave={handleMouseLeave}>
+      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('contactus')} onMouseLeave={handleMouseLeave}>
         <Link to="/contactus">Contact Us</Link>
         {dropdown === 'contactus' && (
           <div className="dropdown-menu">
@@ -109,7 +102,7 @@ const Home = () => {
             <Link to="/contactus1">Corporate Office</Link>
           </div>
         )}
-      </div>
+      </div> */}
     {/* </div> */}
                     
                 </div>
@@ -144,7 +137,7 @@ const Home = () => {
                 <div>
                     <h1 id="a15">Web Design & Development</h1>
                     <br /><br />
-                    <p id="a16">Attract & Engage Clients to your business with creative features. Our websites drive <br></br>your business & Online reputation</p>
+                    <p id="a16">Attract & Engage Clients to your business with creative features. Our websites <br></br> drive your business & Online reputation</p>
                 </div>
                 <div id="a12"></div>
                 <div>
@@ -153,8 +146,13 @@ const Home = () => {
                     <p id="a18">We design and develop AI-powered mobile applications, AI-specific solutions, and intelligent data.</p>
                 </div>
                 <br />
+                {/* <div id="a21"></div> */}
+
                 <div id="a19">
-                    <h3 id="a20"><br /><center>Copyright @Sevakdigitech</center></h3>
+                    <h3 id="a20"><br />Copyright @Sevakdigitech&nbsp;&nbsp;
+                   
+                    </h3>
+                   
                 </div>
             </div>
         </div>

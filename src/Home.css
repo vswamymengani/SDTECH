@@ -1,5 +1,5 @@
 #a1{
-    background-color: aqua;
+    background-color: black;
     width: 100%;
     height: 70px;
 }
@@ -12,12 +12,13 @@
     margin: 10px;
     float: left;
 }
+
 #a3{
-    color: brown;
-    margin-left: 290px;
+    color: white;
+    margin-left: 390px;
     margin-top: 10px;
-    
 }
+
 #a4{
     background-image: url(./img\ cover.jpeg);
     height: 700px;
@@ -63,20 +64,20 @@
     margin-top: -10px;
 }
 #a11{
-    background-image: url(./web.webp);
+    background-image: url(./web1.jpg);
     height: 250px;
-    width: 50%;
+    width: 25%;
     background-repeat: no-repeat;
-    margin: 500px;
+    margin: 540px;
     background-size: 500px;
     margin-top: -430px;
 }
 #a12{
     background-image: url(./api3.jpeg);
     height: 250px;
-    width: 30%;
+    width: 23%;
     background-repeat: no-repeat;
-    margin: 1150px;
+    margin: 1125px;
     margin-top: -430px;
 }
 #a13{
@@ -86,31 +87,28 @@
 #a14{
     margin-right: 1160px;
     margin-top: -30px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     font-weight: -10px;
 }
 #a15{
    margin-left: 530px;
-    margin-top: -450px;
+    margin-top: -490px;
 
 }
 #a16{
    margin-left: 460px;
     margin-top: -30px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     font-weight: -10px;
 
 }
 #a17{
     margin-left: 1110px;
-   margin-top: -1100px;
+   margin-top: -1076px;
 }
 #a18{
     margin-left: 1090px;
     margin-top: -40px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     font-weight: -10px;
 }
@@ -122,7 +120,30 @@
 }
 #a20{
     color: aliceblue;
+    /* background-image: url(./fb.png); */
+    background-size: 30px; 
+    background-repeat: no-repeat; 
+    margin-left: 590px;
+   
+
 }
+Img{
+  width: 100px;
+  height: 100px;
+}
+/* img{
+    margin-left: 30px;
+    /* background-image: url(./fb.png); */
+    /* background-size: 60px;
+    background-repeat: no-repeat;
+    background-color: blue;
+
+}
+    */
+    
+ */
+
+
 /* .navbar{
     background-color: khaki;
     height: 40px;
@@ -160,6 +181,7 @@
     height: 350px;
     width: 100%;
     text-align: justify;
+
     
     
 }
@@ -202,18 +224,28 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
     padding: 10px;
-  }
+    margin-left: 850px;
+    color: blue;
+    background-color: white;
+}
   
   .menu-item {
     position: relative;
     padding: 10px;
+    background-color: aliceblue;
+    height: 10%;
   }
   
   .menu-item a {
-    color: white;
     text-decoration: none;
+    color: black; /* Initial text color */
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item a:hover {
+    color: red; 
+    /* Text color on hover */
   }
   
   .dropdown-menu {
@@ -221,11 +253,23 @@
     top: 100%;
     left: 0;
     background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px black;
     z-index: 1;
     display: flex;
     flex-direction: column;
   }
+  .dropdown-menu a {
+    text-decoration: none;
+    color: black; /* Initial text color */
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown-menu  a:hover {
+    color: blue; 
+    
+    /* Text color on hover */
+  }
+  
   
   .dropdown-menu a {
     color: black;
@@ -268,3 +312,9 @@
     height: 600px;
     margin-top: -50px;
   }
+  #a21{
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 80%;
+  }
+ 
