@@ -1,13 +1,19 @@
-import React , { useState }from 'react';
+import React , { useState ,useEffect }from 'react';
 import { Link } from 'react-router-dom';
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiYoutubeshorts } from "react-icons/si";
 
 
-
+import images from './images';
+import CustomSlider from './Custom.slider';
 
 import './Home.css';
 
 const Home = () => {
     const [dropdown, setDropdown] = useState(null);
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
 
   const handleMouseEnter = (menu) => {
     setDropdown(menu);
@@ -16,10 +22,27 @@ const Home = () => {
   const handleMouseLeave = () => {
     setDropdown(null);
   };
-    
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsNavbarFixed(true);
+      } else {
+        setIsNavbarFixed(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     return (
       
         <div id="a1">
+      <div className={`navbar ${isNavbarFixed ? 'navbar-fixed' : ''}`}>
             <div id="a2">
              
       <h2 id="a3">Sevakdigitech.com</h2>
@@ -27,7 +50,7 @@ const Home = () => {
             <div>
                     <div className="navbar">
       <div className="menu-item" onMouseEnter={() => handleMouseEnter('home')} onMouseLeave={handleMouseLeave}>
-        <Link to="/">Home</Link>
+        <Link to="/" className='homeHover'>Home</Link>
         {dropdown === 'home' && (
           <div className="dropdown-menu">
           </div>
@@ -35,85 +58,36 @@ const Home = () => {
       </div>
 
       <div className="menu-item" onMouseEnter={() => handleMouseEnter('products')} onMouseLeave={handleMouseLeave}>
-        <Link to="/products">Products</Link>
+        <Link to="/products" className='homeHover'>Products</Link>
         {dropdown === 'products' && (
           <div className="dropdown-menu">
-            <Link to="/products">SMS</Link>
-            <Link to="/products2">S2Services</Link>
+            <Link to="/products" className='homeHover'>SMS</Link>
+            <Link to="/products2" className='homeHover'>S2Services</Link>
           </div>
         )}
       </div>
 
       <div className="menu-item" onMouseEnter={() => handleMouseEnter('solutions')} onMouseLeave={handleMouseLeave}>
-        <Link to="/solutions">Solutions</Link>
+        <Link to="/solutions" className='homeHover'>Solutions</Link>
         {dropdown === 'solutions' && (
           <div className="dropdown-menu">
-            <Link to="/solutions">Our Solutions</Link>
+            <Link to="/solutions" className='homeHover'>Our Solutions</Link>
             
           </div>
         )}
       </div>
-
-      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('careers')} onMouseLeave={handleMouseLeave}>
-        <Link to="/careers">Careers</Link>
-        {dropdown === 'careers' && (
-          <div className="dropdown-menu">
-            <Link to="/careers">Career 1</Link>
-            <Link to="/career2">Career 2</Link>
-          </div>
-        )}
-      </div> */}
-
-      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('blog')} onMouseLeave={handleMouseLeave}>
-        <Link to="/blog">Blog</Link>
-        {dropdown === 'blog' && (
-          <div className="dropdown-menu">
-            <Link to="/blog">Post 1</Link>
-            <Link to="/post2">Post 2</Link>
-          </div>
-        )}
-      </div> */}
-
-      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('aboutUs')} onMouseLeave={handleMouseLeave}>
-        <Link to="/aboutUs">About Us</Link>
-        {dropdown === 'aboutUs' && (
-          <div className="dropdown-menu">
-            <Link to="/aboutus">Objective</Link>
-           
-          </div>
-        )}
-      </div> */}
-
-      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('training')} onMouseLeave={handleMouseLeave}>
-        <Link to="/training">Training</Link>
-        {dropdown === 'training' && (
-          <div className="dropdown-menu">
-            <Link to="/training">Corporate Training</Link>
-            <Link to="/course2">Interships list</Link>
-          </div>
-        )}
-      </div> */}
-
-      {/* <div className="menu-item" onMouseEnter={() => handleMouseEnter('contactus')} onMouseLeave={handleMouseLeave}>
-        <Link to="/contactus">Contact Us</Link>
-        {dropdown === 'contactus' && (
-          <div className="dropdown-menu">
-            <Link to="/contactus">Register Address</Link>
-            <Link to="/contactus1">Corporate Office</Link>
-          </div>
-        )}
-      </div> */}
-    {/* </div> */}
-                    
-                </div>
+      </div>
+                      </div>
             </div>
-            <div id="a4">
-                <div>
-                    <div>
-                        <h1 id="a5"><br /><br /><br /><br /><br /><br /><br />One Stop Digital Tech Solution</h1>
-                    </div>
-                </div>
+            <div className='slidebender'>
+              <CustomSlider>
+                {images.map((image, index) => {
+                  return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+                })}
+              </CustomSlider>
             </div>
+
+
             <div className="a6">
                 <h1 id="a7">About Us</h1>
                 <p id="a8">
@@ -131,7 +105,7 @@ const Home = () => {
                 <div>
                     <h1 id="a13">Mobile App Development</h1>
                     <br /><br />
-                    <p id="a14">Bringing Mobility to your reach. Apps that are Fast, Innovative, Affordable</p>
+                    <p id="a14">Bringing Mobility to your reach. Apps that are Fast,<br /> Innovative, Affordable</p>
                 </div>
                 <div id="a11"></div>
                 <div>
@@ -146,13 +120,13 @@ const Home = () => {
                     <p id="a18">We design and develop AI-powered mobile applications, AI-specific solutions, and intelligent data.</p>
                 </div>
                 <br />
-                {/* <div id="a21"></div> */}
 
-                <div id="a19">
-                    <h3 id="a20"><br />Copyright @Sevakdigitech&nbsp;&nbsp;
-                   
-                    </h3>
-                   
+                <div id='a19'>
+                  <h3 style={{color:'aliceblue',textAlign:'left',fontSize:'30px'}}>Copyright @Sevakdigitech&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <FaFacebookF color='white' size={40}/>&nbsp;&nbsp;<FaInstagramSquare size={40} />&nbsp;&nbsp;
+                    <FaLinkedinIn  size={40}/>&nbsp;&nbsp;<SiYoutubeshorts size={40} />
+                  </h3>
+                  
                 </div>
             </div>
         </div>
