@@ -10,10 +10,11 @@ import techImg3 from './assets/tech2.jpeg';
 import techImg4 from './assets/tech9.jpg';
 import techImg5 from './assets/tech8.jpg';
 import Careers from './components/Careers';
-
+// import Products2 from './components/Products2';
 
 import Products from './components/Products'; // Import the Product component
 import './App.css';
+
 
 
 
@@ -36,7 +37,9 @@ function App() {
                   
                 </>
               } />
-              <Route path="/Products" element={<Products />} />
+              <Route path="/SMS" element={<Products />} />
+              {/* <Route path="/S2_SERVICES" element={<Products2 />} />
+               */}
               <Route path="/careers.html" element={<Careers />} />
 
               
