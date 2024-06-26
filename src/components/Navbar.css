@@ -1,0 +1,112 @@
+/* src/components/Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-size: 1.2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+  height: 80px;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 1rem;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar-logo-img {
+  margin-right: 10px; /* Adjust the margin as needed */
+  height: 60px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Other existing styles */
+
+/* Style for the nav item (parent element) */
+.nav-item {
+  position: relative; /* This makes the dropdown positioned relative to this item */
+  display: inline-block; /* Keeps the nav items inline */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  display: none; /* Hide by default */
+  position: absolute; /* Position absolutely relative to .nav-item */
+  top: 100%; /* Place it right below the parent element */
+  left: 0; /* Align the dropdown to the left edge of the parent */
+  z-index: 1000; /* Ensure it is above other content */
+  background-color: black; /* Background color of the dropdown */
+  padding: 10px 0; /* Padding for the dropdown items */
+  box-shadow: 0 8px 16px white; /* Optional: Shadow for dropdown */
+  min-width: 160px; /* Minimum width for the dropdown */
+}
+
+/* Show the dropdown menu on hover */
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style for dropdown items */
+.dropdown-menu a {
+  color: #333; /* Text color for the dropdown items */
+  padding: 10px 20px; /* Padding for each dropdown item */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make the links block elements for padding */
+}
+
+/* Change background color on hover */
+.dropdown-menu a:hover {
+  background-color: #f1f1f1; /* Background color on hover */
+}
+
