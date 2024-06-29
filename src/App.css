@@ -66,6 +66,7 @@ code {
 
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -98,13 +99,15 @@ code {
 }
 
 .content {
-  padding-top: 60px; /* Adjust this if your navbar height changes */
+  padding-top: 60px;
+
 }
 
-footer {
-  /* background-color: #333; */
+.footer {
+
   color: white;
-  padding: 10px 0;
+
+  padding: 0px 0;
   position: absolute;
   bottom: 0;
   width: 100%;

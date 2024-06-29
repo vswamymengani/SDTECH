@@ -78,10 +78,7 @@ const Navbar: React.FC = () => {
             {dropdown.solutions && (
               <ul className="dropdown-menu">
                 <li className="dropdown-item">
-                  <a href="#solution1" className="dropdown-links">Solution 1</a>
-                </li>
-                <li className="dropdown-item">
-                  <a href="#solution2" className="dropdown-links">Solution 2</a>
+                  <a href="OurSolutions" className="dropdown-links">OurSolutions</a>
                 </li>
               </ul>
             )}

@@ -11,11 +11,14 @@ import techImg4 from './assets/tech9.jpg';
 import techImg5 from './assets/tech8.jpg';
 import Careers from './components/Careers';
 import Products2 from  './components/Products2';
-
+import Solutions from './components/Solutions';
+import Blogs from './components/Blogs';
 
 import Products from './components/Products'; // Import the Product component
 import './App.css';
-
+import AboutUs from './components/AboutUs';
+import Training from './components/Training';
+import ContactUs from './components/ContactUs';
 
 
 function App() {
@@ -37,10 +40,16 @@ function App() {
                   
                 </>
               } />
+              
               <Route path="/SMS" element={<Products />} />
               <Route path="/S2_SERVICES" element={<Products2 />} />
+              <Route path="/OurSolutions" element={<Solutions />} />
               
               <Route path="/careers.html" element={<Careers />} />
+              <Route path="/blogs.html" element={<Blogs />} />
+              <Route path="/aboutus.html" element={<AboutUs />} />
+              <Route path="/training.html" element={<Training />} />
+              <Route path="/contactus.html" element={<ContactUs />} />
 
               
               
@@ -48,6 +57,7 @@ function App() {
           </main>
         </div>
   <Footer />
+  
       </div>
     </Router>
   

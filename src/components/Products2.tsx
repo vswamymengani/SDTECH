@@ -10,7 +10,9 @@ export const Products2 = () => {
             <h2 id="d3"> --Quick and Reliable Service</h2>
         </div>
         <div id="i5">
-            <b id="d4"><br></br>Introduction</b><br></br><br></br>
+            <b id="d4"><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction</b><br></br><br></br>
             <p>. In today's fast-paced world, people need an app that can help them quickly and easily find reliable home services. Our S2 home services app can be the solution to this problem.<br></br><br></br> 
              .  We are living in an exciting digital era, where technology and smartphones have transformed the way, we used to avail the services. <br></br><br></br> 
              . We have seen the evolution of the on-demand service marketplace, which is gaining massive popularity all over the world.<br></br> <br></br> 
@@ -19,7 +21,7 @@ export const Products2 = () => {
             .  The most used on-demand service is certainly the technician booking platform, which helps customers to avail the services of the technician to fix the usual technical problems with their digital gadgets and electronic components. <br></br><br></br> 
              . Technician booking platforms bring a marketplace where vendors can connect with their potential customers and other stakeholders who can avail their services and provide the tools and components to serve the customers.<br></br> <br></br> 
              . It also allows the technicians to be listed on the app, where they must undergo an intensive training module and an adequate due diligence process so that their services are listed on the platform.<br></br><br></br> 
-             . Technical booking platform offers the services listed according to location, budget, and type and its offers the services providers a brilliant medium to reach their potential consumers with ease.<br></br><br></br><br></br><br></br><br></br><br></br>
+             <br></br><br></br><br></br><br></br><br></br><br></br>
              <p id="d6"><br></br>
             <b> How does the S2-Technician booking platform work?</b><br></br><br></br> 
             The Technician booking platform usually offers two-fold functioning from the user and service provider perspective.<br></br><br></br><br></br>

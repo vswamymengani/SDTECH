@@ -1,11 +1,27 @@
-#b1{
-    background-color: aqua;
-    height: 600px;
-    width: 100%;
-  }
-  #b2{
-    color:brown;
-    font-style: oblique;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-  }
+/* Container with aqua background */
+#b11 {
+  background-color: aqua;
+  height: 450px;
+  width: 97.4%;
+  padding: 20px;
+}
+
+/* Text styling */
+#b12 {
+  color: brown;
+  font-style: oblique;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Footer styling */
+.footer {
+  /* Use your preferred blue color or a background image */
+  color: white;
+  text-align: center;
+ 
+   /* Adjust padding as needed */
+  position: absolute; 
+
+  width: 100%;
+}
