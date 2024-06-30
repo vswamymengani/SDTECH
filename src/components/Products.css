@@ -18,9 +18,10 @@
     font-family: 'Times New Roman', Times, serif;
    }
   #c3{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
+    color: blue;
    margin-left: 350px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 50px;
    
   }
   #c4{
@@ -30,23 +31,27 @@
     background-repeat: no-repeat;
     margin-left: 870px;
     background-size: 600px;
-    margin-top: -140px;
+    margin-top: -190px;
   }
   
   #a23{
     background-color: moccasin;
-    height: 400px;
+    height: 600px;
     margin-top: 10px;
+    font-size: 20px;
   }
   #a24{
     background-color: thistle;
-    height: 450px;
+    height: 650px;
+    font-size: 20px;
   }
   #a25{
     background-color: linen;
-    height: 850px;
+    height: 1150px;
+    font-size: 20px;
   
   }
+  
   .footer {
     margin-top: 20px;
      color: #fff;
@@ -66,7 +71,24 @@
    }
   #a27{
     background-color: lightsteelblue;
-    height: 880px;
+    height: 1980px;
     text-align: left;
+    font-size: 20px;
   }
+  .custom-bullet {
+    position: relative;
+    padding-left: 20px; /* Add space for the bullet */
+    margin-bottom: 10px;
+  }
+  
+  .custom-bullet:before {
+    content: '•'; /* Unicode bullet character */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black; /* Bullet color */
+    font-size: 1.5em; /* Bullet size */
+    line-height: 1; /* Align bullet vertically with the text */
+  }
+  
    

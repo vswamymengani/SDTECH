@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import Logo from '../assets/Logo-sevak.jpg';
 import './Products';
+import './Solutions';
 interface DropdownState {
   [key: string]: boolean;
 }
@@ -26,7 +27,7 @@ const Navbar: React.FC = () => {
           <img src={Logo} alt="Logo" className="navbar-logo-img" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Sevak Digital Technologies
+          Sevakdigitech.com
         </a>
         <ul className="nav-menu">
           <li

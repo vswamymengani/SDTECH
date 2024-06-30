@@ -1,23 +1,22 @@
-#b1{
+#b19{
     background-color: aqua;
     height: 400px;
-    width: 130%;
+    width: 125%;
   margin-top: -20px;
    
 }
-#b2{
+#b29{
     color:brown;
     font-style: oblique;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
 .footer {
-    margin-top: 20px;
+    /* margin-top: 40px; */
      color: #fff;
      text-align: center;
      padding: 20px 0; 
-     position:relative ;
-      width: 590%;
-     bottom: 0;
+     /* position:relative ; */
+      width: 130%;
     
    } 

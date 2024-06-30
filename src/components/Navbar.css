@@ -95,6 +95,7 @@
 /* Show the dropdown menu on hover */
 .nav-item:hover .dropdown-menu {
   display: block;
+  text-align: left;
 }
 
 /* Style for dropdown items */

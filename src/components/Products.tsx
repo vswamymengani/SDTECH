@@ -64,43 +64,49 @@ const Products = () => {
                      </p> </div>
                    <br></br>
 
-            <div id="a27"><br></br>
-            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concepts of School  Management System- SMS</h1><br></br>
-             <p><b>SMS for management:</b><br></br><br></br>
-                      Single points school management software
-                      Manage multiple campuses.
-                      Enable internet front-end for the school.
-                      Connect with Parents and other stakeholders effectively
-                      Build and Manage community of parents, teachers and students
-                      Manages all administrative records with zero redundancy
-                      Achieve best possible resource optimization
-                      Automate all operational functions like fees, Attendance, Exam Management.
-                      Automatic generation and regeneration of timetable with dynamic substitute management.<br></br> <br></br><br></br>
-               <b>SMS for Teachers:</b><br></br><br></br>
-                  Complete marks/grade management<br></br>
-                  Publish articles for others.<br></br>
-                  Interact with parents efficiently and effectively.<br></br>
-                  View analytical reports<br></br>
-                  Email and Internal messaging system.<br></br>
-                  Participate in forum and share knowledge with others.<br></br>
-                  View Timetable in advance.<br></br><br></br><br></br>
-                 <b> SMS for Students:</b><br></br><br></br>
-                    Real time exposure for better learning.
-                    Publish article to share knowledge, experience and views.
-                    Participate in forums.
-                    View online marks and timetable for exams.
-                    Interaction with other students, teachers and parents.
-                    View Timetable in advance.
-                    View current events and holidays at school<br></br><br></br><br></br>
-                  <b>SMS for Parents:</b><br></br><br></br>
-                     Get latest updates about school through image Gallery, News etc..
-                     Share knowledge and views with other parents and school through various features like article and forums.
-                     Get connected with schools effectively and easily
-                    Interact with teachers through internal messaging system.
-                    know status about her/his child through attendance, marks, fees etc ...
-              </p>
-              
-          </div>
+                   <div id="a27">
+        <h1>&nbsp;&nbsp;Concepts of School Management System- SMS</h1><br />
+        <p><b>SMS for management:</b></p>
+        <p className="custom-bullet">Single points school management software</p>
+        <p className="custom-bullet">Manage multiple campuses.</p>
+        <p className="custom-bullet">Enable internet front-end for the school.</p>
+        <p className="custom-bullet">Connect with Parents and other stakeholders effectively</p>
+        <p className="custom-bullet">Build and Manage community of parents, teachers and students</p>
+        <p className="custom-bullet">Manages all administrative records with zero redundancy</p>
+        <p className="custom-bullet">Achieve best possible resource optimization</p>
+        <p className="custom-bullet">Automate all operational functions like fees, Attendance, Exam Management.</p>
+        <p className="custom-bullet">Automatic generation and regeneration of timetable with dynamic substitute management.</p>
+        <br /><br />
+
+        <p><b>SMS for Teachers:</b></p>
+        <p className="custom-bullet">Complete marks/grade management</p>
+        <p className="custom-bullet">Publish articles for others.</p>
+        <p className="custom-bullet"> Interact with parents efficiently and effectively.</p>
+        <p className="custom-bullet">View analytical reports.</p>
+        <p className="custom-bullet"> Email and Internal messaging system.</p>
+        <p className="custom-bullet"> Participate in forum and share knowledge with others.</p>
+        <p className="custom-bullet">View Timetable in advance.</p>
+        <br></br>
+
+        <p><b>SMS for Students:</b></p>
+        <p className="custom-bullet">Real time exposure for better learning.</p>
+        <p className="custom-bullet">Publish article to share knowledge, experience and views.</p>
+        <p className="custom-bullet"> Participate in forums.</p>
+        <p className="custom-bullet">View online marks and timetable for exams.</p>
+        <p className="custom-bullet">Interaction with other students, teachers and parents.</p>
+        <p className="custom-bullet"> Participate in forum and share knowledge with others.</p>
+        <p className="custom-bullet">View Timetable in advance.</p>
+        <p className="custom-bullet">View current events and holidays at school.</p>
+        <br></br>
+
+       <p><b>SMS for Parents:</b></p>
+       <p className="custom-bullet">Get latest updates about school through image Gallery, News etc..</p>
+       <p className="custom-bullet">Share knowledge and views with other parents and school through various features like article and forums.</p>
+       <p className="custom-bullet">Get connected with schools effectively and easily</p>
+       <p className="custom-bullet">Interact with teachers through internal messaging system.</p>
+       <p className="custom-bullet">know status about her/his child through attendance, marks, fees etc ...</p>
+
+    </div>
     </div>
   );
 };
