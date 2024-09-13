@@ -1,8 +1,9 @@
 #b21{
     background-color: aqua;
-    height: 600px;
-    width: 122%;
+    height: 700px;
+    width: 102%;
    padding: 20px;
+   text-align: center;
    
   }
   #b22{
@@ -11,6 +12,8 @@
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 60px;
+    margin-right: 1000px;
+    text-align: left;
   }
   .footer {
     margin-top: 50px;
@@ -18,7 +21,7 @@
      text-align: center;
      padding: 20px 0; 
      position:relative ;
-      width: 160%;
+      width: 90%;
      bottom: 0;
     
    } 

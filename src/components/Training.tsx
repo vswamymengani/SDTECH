@@ -4,8 +4,8 @@ const Training = () => {
   return (
     <div id="b41">
       <h1>Our Training: </h1>
-      <p id="b42">Corporate Training
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></br>Internships</p>
+      <h1 id="b42">Corporate Training<br></br>
+     Internships</h1>
     </div>
   );
 };

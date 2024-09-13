@@ -3,6 +3,7 @@
     height: 400px;
     width: 121.9%;
    padding: 20px;
+   margin: 10px;
    
   }
   #b42{
@@ -11,6 +12,7 @@
     font-style: oblique;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
+    text-align: left;
   }
   .footer {
     margin-top: 70px;
